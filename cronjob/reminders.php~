@@ -1,0 +1,63 @@
+<?
+
+include 'sendsms.php';
+
+$database='onlineDairy';
+$username='root';
+$password='1234pass';
+$server='localhost';
+//connecting to the database
+if(!($conn=mysql_connect($server, $username, $password))||!mysql_select_db($database))
+{
+	
+	echo 'Error Connecting to the database'.mysql_error();
+
+}
+else
+{
+	$date=date('Y-m-d', strtotime('+1 day'));
+
+	$query="SELECT phone_no,activity, description FROM reminder WHERE date_remind='$date'";
+	
+	if($result=mysql_query($query))
+	{
+		$num_rows=mysql_num_rows($result);
+		
+		if($num_rows>0)
+		{
+			$result_array=mysql_fetch_assoc($result);
+			foreach ($result_array as $reminder) {
+
+				$activity=$reminder['activity'];
+				$msg=$reminder['description'];
+				$sender=$reminder['phone_no'];
+				$time=time();
+				$time=date("Y-M-d,@ H:m:s", $time);
+
+				$msg_send="Reminder activity, Subject: ".$activity.",Description- ".$msg.", Tomorrow ".$date.".Sent at".$time
+				."Admin @Dairy online";
+
+				if($this->sendsms->ozekiSend($sender, $msg_send, true))
+				{
+					echo "Sms sent";
+				}
+			}
+		  
+		}
+		else
+		{
+			echo "No Results";
+		}
+		
+	}
+
+
+
+}
+
+
+
+
+
+
+?>

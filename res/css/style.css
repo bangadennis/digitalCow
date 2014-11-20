@@ -1,0 +1,178 @@
+
+/*headers*/
+.header
+{
+	background-color: #000000;
+	margin-bottom:70px;
+
+}
+
+.header li:active
+{
+	background-color: #fff;
+
+}
+
+.header li:hover
+{
+	background-color: #fff;
+
+}
+
+
+
+.user_profile
+{
+	font-family: verdana;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+
+
+/*main*/
+.main-view
+{
+	margin-top: 60px;
+	margin-bottom: 50px;
+	
+	
+}
+
+.main-view-1
+{
+	margin-top: 60px;
+	margin-bottom: 50px;
+	
+	
+}
+
+
+#background
+{
+	background-image: url('../images/cow_side.jpg');
+	background-repeat:repeat-x repeat-y;
+	background-position:left right;
+	background-position: relative;
+}
+
+.white_background
+{
+	background-color: #FFFFFF;
+}
+
+
+
+.footer-pad
+{  
+	margin-top: 20px;
+}
+.home-view-1
+{
+	background-color: #FFFFE0;
+	border:5px solid #808080;
+	border-radius: 45px 15px;
+	padding-left: 5px;
+	border-right: 0px;
+}
+
+.link_cow
+{
+	text-decoration: none;
+}
+
+.link_cow a
+{
+	font-size: 16px;
+	text-decoration: none;
+
+}
+
+.link_cow a:hover
+{
+	color: #000;
+
+}
+
+.link_cow a:active
+{
+	color: gray;
+	
+}
+
+
+
+.home-view-2
+{
+	background-color: #FFFFE0;
+	border:1px solid #808080;
+	border-radius: 5px 5px;
+	padding-left: 5px;
+}
+
+.home-view-3
+{
+	background-color: #FFFFE0;
+	border:1px solid #808080;
+	border-radius: 5px 5px;
+	padding-left: 5px;
+	border-left: 0px;
+}
+
+.side-view-1
+{
+	background-color:#FFFFE0;
+	border:1px solid #C0C0C0;
+	border-radius: 10px 10px;
+	padding: 10px;
+}
+
+.side-view-2
+{
+	background-color:#FFFFE0;
+	border:1px solid #C0C0C0;
+	border-radius: 10px 10px;
+	border-left: 0px;
+	padding: 10px;
+}
+
+
+.myProfile
+{
+	background-color: #FFFFE0;
+	border-radius: 20px;
+}
+
+.milkanalysis{
+
+	border:1px solid #C0C0C0;
+	border-radius: 10px 20px;
+	background-color: #fff;
+	font-size: 1.4em;
+	font-family: verdana;
+}
+
+
+#bodyh
+{
+	padding-bottom: 10px;
+}
+.btn_black
+{
+	color: black;
+	background-color: white;
+}
+
+
+#Myslide
+{
+	border:20px solid black;
+	border-radius: 40px 40px;
+	background-color: gray;
+	height: 250px;
+}
+
+.background_home
+{
+	background-color: white;
+}
