@@ -3,6 +3,5 @@
 - Record Storage
 - Cost benefit analysis(CBA)
 - SMS Update for records
-- Reminders.
-- 
+- Reminders
 
