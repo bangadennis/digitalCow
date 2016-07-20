@@ -1,7 +1,8 @@
-# digitalCow
-Online dairy- Web APP
--Record Storage
--Analysis
--SMS Update of records
--Reminders.
+# DigitalCow -CS -2nd Year Project 
+- Online dairy- Web APP
+- Record Storage
+- Cost benefit analysis(CBA)
+- SMS Update for records
+- Reminders.
+- 
 
